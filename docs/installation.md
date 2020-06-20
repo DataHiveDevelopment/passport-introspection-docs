@@ -18,7 +18,9 @@ $ composer require datahivedevelopment/passport-introspection-server
  Passport is required for this package so it will be installed if it isn't already.
 {% endhint %}
 
-This package supports auto-discovery so no need to register the service providers.:
+This package supports auto-discovery so no need to register the service providers.
+
+## Passport Configuration
 
 Once installed, if you haven’t already done so, make sure you follow [Passport’s Installation docs](https://laravel.com/docs/7.x/passport#installation).
 
