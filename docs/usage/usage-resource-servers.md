@@ -44,7 +44,7 @@ Remove the squiggle brackets, { and }, in the above example when updating it in 
 
 ## Introspection
 
-Any API routes in your `routes/api.php` file that, under Passport, would normally use the `auth:api` middleware should now use the `auth:introspection` middleware. Any call to these routes will have their bearer tokens checked against the authorization server via introspection.
+Any requests to routes in your `routes/api.php` file using the `auth:api` middleware will have the bearer tokens checked against the authorization server via introspection.
 
 {% hint style="info" %}
 To reduce network traffic, time to response and the workload on your authorization server, the Introspection Client packageg will cache the introspection response for, a configurable, 1 hour.
