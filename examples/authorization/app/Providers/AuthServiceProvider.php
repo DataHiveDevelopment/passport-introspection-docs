@@ -31,6 +31,7 @@ class AuthServiceProvider extends ServiceProvider
 
         Passport::tokensCan([
             'user.read' => 'Read user profile.',
+            'messages.read' => 'Read user messages.',
         ]);
         //Passport::tokensExpireIn(now()->addMinutes(15));
         Passport::refreshTokensExpireIn(now()->addYear());

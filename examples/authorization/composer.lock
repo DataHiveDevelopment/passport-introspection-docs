@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "766f4a41129c23b1607beaf32cb49f51",
+    "content-hash": "582445d67dfd362679307439045a28ed",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -109,8 +109,8 @@
             "version": "dev-master",
             "dist": {
                 "type": "path",
-                "url": "../datahivedevelopment/passport-introspection-server",
-                "reference": "b31aaed4c164742353beee5cd3ad17920b3454dd"
+                "url": "/Users/dustinschreiber/code/datahivedevelopment/passport-introspection-server",
+                "reference": "ce526a253dd761bc26c8cd32841b88d36ea984cc"
             },
             "require": {
                 "laravel/passport": "^9.2",
@@ -144,7 +144,7 @@
                 "source": "https://github.com/datahivedevelopment/passport-introspection-server"
             },
             "transport-options": {
-                "relative": true
+                "relative": false
             }
         },
         {
@@ -1220,16 +1220,16 @@
         },
         {
             "name": "laravel/passport",
-            "version": "v9.2.1",
+            "version": "v9.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/passport.git",
-                "reference": "0931d75235283d651b767d291a79cafba5d6ce68"
+                "reference": "7ddaa0fa6ff5c100cf755bf85d86886e0edcb0e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/passport/zipball/0931d75235283d651b767d291a79cafba5d6ce68",
-                "reference": "0931d75235283d651b767d291a79cafba5d6ce68",
+                "url": "https://api.github.com/repos/laravel/passport/zipball/7ddaa0fa6ff5c100cf755bf85d86886e0edcb0e8",
+                "reference": "7ddaa0fa6ff5c100cf755bf85d86886e0edcb0e8",
                 "shasum": ""
             },
             "require": {
@@ -1289,7 +1289,7 @@
                 "oauth",
                 "passport"
             ],
-            "time": "2020-05-14T08:24:43+00:00"
+            "time": "2020-06-25T12:36:25+00:00"
         },
         {
             "name": "laravel/tinker",
@@ -3386,16 +3386,16 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "v5.1.0",
+            "version": "v5.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-foundation.git",
-                "reference": "e0d853bddc2b2cfb0d67b0b4496c03fffe1d37fa"
+                "reference": "f93055171b847915225bd5b0a5792888419d8d75"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/e0d853bddc2b2cfb0d67b0b4496c03fffe1d37fa",
-                "reference": "e0d853bddc2b2cfb0d67b0b4496c03fffe1d37fa",
+                "url": "https://api.github.com/repos/symfony/http-foundation/zipball/f93055171b847915225bd5b0a5792888419d8d75",
+                "reference": "f93055171b847915225bd5b0a5792888419d8d75",
                 "shasum": ""
             },
             "require": {
@@ -3443,7 +3443,21 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "https://symfony.com",
-            "time": "2020-05-24T12:18:07+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-15T06:52:54+00:00"
         },
         {
             "name": "symfony/http-kernel",
@@ -3911,16 +3925,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.17.0",
+            "version": "v1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "fa79b11539418b02fc5e1897267673ba2c19419c"
+                "reference": "7110338d81ce1cbc3e273136e4574663627037a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/fa79b11539418b02fc5e1897267673ba2c19419c",
-                "reference": "fa79b11539418b02fc5e1897267673ba2c19419c",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/7110338d81ce1cbc3e273136e4574663627037a7",
+                "reference": "7110338d81ce1cbc3e273136e4574663627037a7",
                 "shasum": ""
             },
             "require": {
@@ -3933,6 +3947,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.17-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -3966,7 +3984,21 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-05-12T16:47:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-06T08:46:27+00:00"
         },
         {
             "name": "symfony/polyfill-php72",
@@ -4083,16 +4115,16 @@
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.17.0",
+            "version": "v1.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd"
+                "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/5e30b2799bc1ad68f7feb62b60a73743589438dd",
-                "reference": "5e30b2799bc1ad68f7feb62b60a73743589438dd",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/4a5b6bba3259902e386eb80dd1956181ee90b5b2",
+                "reference": "4a5b6bba3259902e386eb80dd1956181ee90b5b2",
                 "shasum": ""
             },
             "require": {
@@ -4102,6 +4134,10 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.17-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
                 }
             },
             "autoload": {
@@ -4141,7 +4177,21 @@
                 "portable",
                 "shim"
             ],
-            "time": "2020-05-12T16:47:27+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-06T08:46:27+00:00"
         },
         {
             "name": "symfony/process",
@@ -4195,20 +4245,20 @@
         },
         {
             "name": "symfony/psr-http-message-bridge",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/psr-http-message-bridge.git",
-                "reference": "ce709cd9c90872c08c2427b45739d5f3c781ab4f"
+                "reference": "e44f249afab496b4e8c0f7461fb8140eaa4b24d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/ce709cd9c90872c08c2427b45739d5f3c781ab4f",
-                "reference": "ce709cd9c90872c08c2427b45739d5f3c781ab4f",
+                "url": "https://api.github.com/repos/symfony/psr-http-message-bridge/zipball/e44f249afab496b4e8c0f7461fb8140eaa4b24d2",
+                "reference": "e44f249afab496b4e8c0f7461fb8140eaa4b24d2",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.1",
+                "php": ">=7.1",
                 "psr/http-message": "^1.0",
                 "symfony/http-foundation": "^4.4 || ^5.0"
             },
@@ -4255,7 +4305,21 @@
                 "psr-17",
                 "psr-7"
             ],
-            "time": "2020-01-02T08:07:11+00:00"
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-06-25T08:21:47+00:00"
         },
         {
             "name": "symfony/routing",

@@ -27,7 +27,7 @@ class AuthController extends Controller
             'client_id' => config('services.oauth.client_id'),
             'redirect_uri' => config('services.oauth.redirect'),
             'response_type' => 'code',
-            'scope' => 'user.read',
+            'scope' => 'user.read messages.read',
             'state' => $state,
         ]);
         

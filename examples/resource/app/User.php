@@ -2,15 +2,15 @@
 
 namespace App;
 
+use Illuminate\Support\Facades\Http;
+use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Illuminate\Notifications\Notifiable;
-use Illuminate\Support\Facades\Http;
-use Laravel\Passport\HasApiTokens;
+use DataHiveDevelopment\PassportIntrospectionClient\HasIntrospectedToken;
 
 class User extends Authenticatable
 {
-    use HasApiTokens, Notifiable;
+    use HasIntrospectedToken, Notifiable;
 
     /**
      * The attributes that are mass assignable.
@@ -18,7 +18,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'uuid', 'name', 'access_token', 'refresh_token', 'scopes', 'expires_at',
+        'uuid', 'name', 'access_token', 'refresh_token', 'expires_at',
     ];
 
     /**
@@ -27,7 +27,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        'id', 'access_token', 'refresh_token', 'scopes', 'expires_at',
+        'id', 'access_token', 'refresh_token', 'expires_at',
     ];
 
     /**
@@ -36,7 +36,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $casts = [
-        'scopes' => 'array',
         'expires_at' => 'datetime',
     ];
 

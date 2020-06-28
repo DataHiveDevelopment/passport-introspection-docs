@@ -27,10 +27,16 @@ class HomeController extends Controller
     {
         $authApiUser = Http::withToken(Auth::user()->access_token)->acceptJson()->get(config('services.oauth.base_url').'/api/user');
         $appApiUser = Http::withToken(Auth::user()->access_token)->acceptJson()->get(route('api.examples.user'));
+        $scopeApi = Http::withToken(Auth::user()->access_token)->acceptJson()->get(route('api.examples.scope'));
+
+        $parser = new \Lcobucci\JWT\Parser();
+        $token = $parser->parse(Auth::user()->access_token);
 
         return view('home')->with([
             'authApiUser' => $authApiUser->body(),
             'appApiUser' => $appApiUser->body(),
+            'scopeApi' => $scopeApi->body(),
+            'token' => $token,
         ]);
     }
 }

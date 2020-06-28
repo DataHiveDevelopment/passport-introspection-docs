@@ -7,16 +7,16 @@
 
 ---
 
-* [Installation](server-installation.md)
-* [Configuration](server-configuration.md)
+* [Installation](server/installation.md)
+* [Configuration](server/configuration.md)
 
 ## Introspection Client
 
-* [Installation](introspection-client/client-installation.md)
-* [Configuration](introspection-client/client-configuration.md)
+* [Installation](client/installation.md)
+* [Configuration](client/configuration.md)
 
 ## Usage
 
-* [Resource Servers](usage/usage-resource-servers.md)
-* [Troubleshooting](usage/usage-troubleshooting.md)
+* [Resource Servers](usage/resource-servers.md)
+* [Troubleshooting](usage/troubleshooting.md)
 

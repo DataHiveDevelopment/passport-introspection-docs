@@ -18,4 +18,8 @@ Route::middleware('auth:api')->prefix('/examples')->name('api.examples.')->group
     Route::get('/user', function (Request $request) {
         return $request->user();
     })->name('user');
+
+    Route::middleware('scope:messages.read')->get('/messages', function (Request $request) {
+        return response()->json(['count' => 0]);
+    })->name('scope');
 });
