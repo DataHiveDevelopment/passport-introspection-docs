@@ -46,19 +46,19 @@
 
                     <div class="form-group row">
                         <div class="col-md-4">
-                            {{ config('app.url') }}/api/examples/scope
+                            (Axios Javscript Request, non-scoped) {{ config('app.url') }}/api/examples/notifications
                         </div>
                         <div class="col">
-                            <textarea rows="5" class="form-control" onfocus="this.select();" readonly>{{ $scopeApi }}</textarea>
+                            <api-component :url="'/api/examples/notifications'"></api-component>
                         </div>
                     </div>
 
                     <div class="form-group row">
                         <div class="col-md-4">
-                            (Axios Javscript Request) {{ config('app.url') }}/api/examples/user
+                            (Axios Javscript Request, scoped) {{ config('app.url') }}/api/examples/messages
                         </div>
                         <div class="col">
-                            <api-component></api-component>
+                            <api-component :url="'/api/examples/messages'"></api-component>
                         </div>
                     </div>
                 </div>

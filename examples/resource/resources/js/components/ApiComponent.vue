@@ -1,6 +1,7 @@
 <template>
     <div>
-        <button v-on:click="go()">Make Request</button>
+        <button class="btn btn-primary" v-on:click="go()">Make Request</button>
+        <textarea rows="5" class="form-control" onfocus="this.select();" readonly v-model="response"></textarea>
     </div>
 </template>
 
@@ -10,11 +11,23 @@
             console.log('Component mounted.')
         },
 
+        props: {
+            url: {
+                type: String
+            }
+        },
+
+        data() {
+            return {
+                response: null
+            }
+        },
+
         methods: {
             go: function () {
-                axios.get('/api/examples/user')
+                axios.get(this.url)
                     .then(response => {
-                        console.log(response.data);
+                        this.response = JSON.stringify(response.data);
                     });
             }
         }

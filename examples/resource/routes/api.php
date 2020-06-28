@@ -20,6 +20,26 @@ Route::middleware('auth:api')->prefix('/examples')->name('api.examples.')->group
     })->name('user');
 
     Route::middleware('scope:messages.read')->get('/messages', function (Request $request) {
-        return response()->json(['count' => 0]);
-    })->name('scope');
+        return response()->json([
+            'count' => 1,
+            'messages' => [
+                [
+                    'id' => 0,
+                    'from' => 'Keyes, Jacob (UNSC Captain) <keyes.jacob@unsc.gov>',
+                    'subject' => 'Deployment Orders',
+                    'body' => "Get Cortana off this ship. Keep her safe from the enemy. If they capture her, they'll learn everything. Force deployment, weapons research... Earth."
+                ]
+            ]
+        ]);
+    })->name('messages');
+
+    Route::get('/notifications', function () {
+        return response()->json([
+            [
+                'id' => 0,
+                'priority' => 'high',
+                'body' => 'You have new messages from Captain Keyes.'
+            ]
+        ]);
+    })->name('notifications');
 });
