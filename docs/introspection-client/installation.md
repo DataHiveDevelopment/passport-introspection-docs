@@ -27,11 +27,5 @@ But, if you need to, in `config\app.php`:
 DataHiveDevelopment\PassportIntrospectionClient\IntrospectionServiceProvider::class,
 ```
 
-## Configuration
-
-The Introspection Client has a few configuration values that you can set using your `.env` file. Additionally, you can publish the configuration file using `php artisan vendor:publish --tag=introspection-client-config`.
-
-{% hint style="info" %}
-The specifics of the configuration is outlined [here](usage.md).
-{% endhint %}
+## 
 

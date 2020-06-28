@@ -1,6 +1,6 @@
 # Overview
 
-If you aren't familiar with OAuth introspection, I recommend having a read [through this](https://www.oauth.com/oauth2-servers/token-introspection-endpoint/) to get familiar with it.
+If you aren't familiar with OAuth introspection, I recommend having a read [through this](https://www.oauth.com/oauth2-servers/token-introspection-endpoint/) to get familiar with it. Here is the[ RFC-7662](https://tools.ietf.org/html/rfc7662) if your into that kinda thing as well.
 
 Everyone caught up? Great! Let's get started then!
 

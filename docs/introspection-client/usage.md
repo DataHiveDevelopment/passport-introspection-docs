@@ -46,9 +46,11 @@ Remove the squiggle brackets, { and }, in the above example when updating your `
 
 Any requests to routes in your `routes/api.php` file using the `auth:api` middleware will have the bearer tokens checked against the authorization server via introspection.
 
-If properly configured, you can use Laravel’s helpers like `Auth()->user()` to access the user associated with the access token in your api controllers.
+If properly configured, you can use Laravel’s helpers like `Auth()->user()` to access the user associated with the access token in your API controllers.
 
-{% hint style="warning" %}
-To reduce network traffic, time to response and the workload on your authorization server, the Introspection Client package will cache the introspection response for, a configurable, 15 minutes. See [Configuration](configuration.md#introspection-response-ttl) for more details.
-{% endhint %}
+## Protecting API Routes with Scopes
+
+When writing API routes on your resource servers, you can use the Passport Middleware for scopes directly. Please see the [official documentation](https://laravel.com/docs/passport#checking-scopes) for details on configuring the middleware and usage.
+
+You can [register scopes](https://laravel.com/docs/passport#token-scopes) on your authorization server using the `Passport::tokensCan` method.
 

@@ -31,30 +31,7 @@ DataHiveDevelopment\PassportIntrospectionServer\IntrospectionServiceProvider::cl
 
 ## Migrations
 
-The Introspection Server package has one migration to modify the Laravel Passport `oauth_clients` table and add a `can_introspect` column.
-
-If you want to disable the migration, you can call the `Introspection::ignoreMigrations` method in the `register` method of your `AppServiceProvider`. You can export the default migrations using `php artisan vendor:publish --tag=introspection-server-migrations`.
-
-```php
-<?php
-
-namespace App\Providers;
-
-use Illuminate\Support\ServiceProvider;
-use DataHiveDevelopment\PassportIntrospectionServer\Introspection;
-
-class AppServiceProvider extends ServiceProvider
-{
-    /**
-     * Register any application services.
-     *
-     * @return void
-     */
-    public function register()
-    {
-        Introspection::ignoreMigrations();
-    }
-```
+The Introspection Server package has one migration to modify the Laravel Passport `oauth_clients` table and add a `can_introspect` column. You can read how to disable and publish them [here](configuration.md#migrations).
 
 ## Passport Installation
 
