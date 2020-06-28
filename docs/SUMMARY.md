@@ -5,18 +5,16 @@
 
 ## Introspection Server
 
----
-
-* [Installation](server/installation.md)
-* [Configuration](server/configuration.md)
+* [Installation](introspection-server/installation.md)
+* [Configuration](introspection-server/configuration.md)
 
 ## Introspection Client
 
-* [Installation](client/installation.md)
-* [Configuration](client/configuration.md)
+* [Installation](introspection-client/installation.md)
+* [Configuration](introspection-client/configuration.md)
 
-## Usage
+---
 
-* [Resource Servers](usage/resource-servers.md)
-* [Troubleshooting](usage/troubleshooting.md)
+* [Usage](usage.md)
+* [Troubleshooting](troubleshooting.md)
 
