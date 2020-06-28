@@ -16,5 +16,5 @@ These packages are still under development so not everything is present. You can
 
 * [Documentation](https://app.gitbook.com/@rearmedhalo/s/passport-introspection/)
 * [Introspection Server Repository](https://github.com/DataHiveDevelopment/passport-introspection-server)
-* \(Coming Soon\) Introspection Client Repository
+* [Introspection Client Repository](https://github.com/DataHiveDevelopment/passport-introspection-client)
 
