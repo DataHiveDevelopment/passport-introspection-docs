@@ -12,9 +12,9 @@
 
 * [Installation](introspection-client/installation.md)
 * [Configuration](introspection-client/configuration.md)
+* [Usage](introspection-client/usage.md)
 
 ---
 
-* [Usage](usage.md)
 * [Troubleshooting](troubleshooting.md)
 

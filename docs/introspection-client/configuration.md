@@ -11,7 +11,7 @@ INTROSPECTION_CLIENT_ID=
 INTROSPECTION_CLIENT_SECRET=
 ```
 
-See [Usage &gt; Resource Servers](../usage.md) to understand the details to fill in here.
+See [Usage &gt; Resource Servers](usage.md) to understand the details to fill in here.
 
 ## Other Optional Configuration Options
 

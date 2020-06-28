@@ -49,6 +49,6 @@ Any requests to routes in your `routes/api.php` file using the `auth:api` middle
 If properly configured, you can use Laravel’s helpers like `Auth()->user()` to access the user associated with the access token in your api controllers.
 
 {% hint style="warning" %}
-To reduce network traffic, time to response and the workload on your authorization server, the Introspection Client package will cache the introspection response for, a configurable, 15 minutes. See [Configuration](introspection-client/configuration.md#introspection-response-ttl) for more details.
+To reduce network traffic, time to response and the workload on your authorization server, the Introspection Client package will cache the introspection response for, a configurable, 15 minutes. See [Configuration](configuration.md#introspection-response-ttl) for more details.
 {% endhint %}
 
