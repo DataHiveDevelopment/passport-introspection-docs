@@ -25,7 +25,7 @@ Using artisan, you can generate these credentials:
 php artisan passport:client --client 
 ```
 
-Check out the [Passport documentation](https://laravel.com/docs/passport#client-credentials-grant-tokens) for more details on generating the tokens. After creating the client, don’t forget to update the `can_introspect` column in the database to `true`.
+Check out the [Passport documentation](https://laravel.com/docs/passport#client-credentials-grant-tokens) for more details on generating the tokens. After creating the client, don’t forget to update the `can_introspect` column in the database to `true`. See the [Introspection Server Configuration](https://rearmedhalo.gitbook.io/passport-introspection/introspection-server/configuration#oauth-clients-for-introspection) page for details.
 
 ## Resource Server
 
@@ -50,7 +50,7 @@ If properly configured, you can use Laravel’s helpers like `Auth()->user()` to
 
 ## Protecting API Routes with Scopes
 
-When writing API routes on your resource servers, you can use the Passport Middleware for scopes directly. Please see the [official documentation](https://laravel.com/docs/passport#checking-scopes) for details on configuring the middleware and usage.
+When writing API routes on your resource servers, you can use the Passport middleware for scopes directly. Please see the [official documentation](https://laravel.com/docs/passport#checking-scopes) for details on configuring the middleware and usage.
 
 You can [register scopes](https://laravel.com/docs/passport#token-scopes) on your authorization server using the `Passport::tokensCan` method.
 
