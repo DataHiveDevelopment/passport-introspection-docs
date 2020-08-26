@@ -21,7 +21,7 @@ In your `App\Providers\AuthServiceProvider.php`, call the `Introspection::routes
 ```php
 <?php
 
-use DataHiveDevelopment\Introspection\Introspection;
+use DataHiveDevelopment\PassportIntrospectionServer\Introspection;
 // ...
 public function boot()
 {
